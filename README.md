@@ -1,5 +1,81 @@
 # 최호용
 
+## <span style="color:yellow">**2023-04-27**</span>
+
+### 19:51 도착 후 내용을 정리했습니다.
+
+<br>
+
+## **그래프**
+
+### 데이터 입력
+
+### ex) age.A <- c(1, 2, 3, 4, 5) age.B <- c(5, 4, 3, 2, 1)
+
+<br>
+
+### **합치기**
+
+### ds <- rbind(age.A, age.B)
+
+<br>
+
+### **그래프 작성**
+
+### barplot(ds, main = "제목", col=rainbiw(숫자), beside=T)
+
+<br>
+
+### **그래프 속성 (필요할 때 찾아서 쓰도록)**
+
+### col=rainbow(), besode=True, legend.text=T, mfrow 
+
+<br>
+
+## **히스토그램**
+
+### 히스토그램은 외관상 막대그래프와 유사합니다. 일반적으로 막대 사이에
+간격이 있으면 막대그래프, 간격이 없이 막대들이 붙어 있으면 히스토그램이다.
+
+### **data생성**
+
+set.seed(1)
+
+data=rnorm(100,170,5)
+
+<br>
+
+### **히스토그램 그리기**
+
+hist(data)
+
+<br>
+
+### **히스토그램 그리기**
+
+### a=hist(data
+
+ ,breaks=seq(150,190,by=2)
+
+ ,col="red"
+
+,main="my histogram"
+
+ ,xlab="height(cm)"
+
+ ,axes=FALSE)
+
+ <br>
+
+ ### 
+
+<br>
+
+---
+---
+
+<br>
+
 ## <span style="color:yellow">**2023-04-05**</span>
 
 강의 도착 전에 내용은 적지 못하였습니다.
