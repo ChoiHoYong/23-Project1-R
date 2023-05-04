@@ -1,5 +1,123 @@
 # 최호용
 
+## <span style="color:yellow">**2023-05-04**</span>
+
+<br>
+
+## **그래프**
+
+```
+month <- 1:12
+late <- c(5,8,7,9,4,6,12,13,8,6,6,4)
+late2 <- c(4,6,5,7,8,10,2,8,4,12,3,20)
+plot(month,
+     late,
+     main='지각생 통계',
+     type='b',
+     lty=1,
+     col='red',
+     lwd=,
+     xlab="Month",
+     ylab='Late cnt')
+lines(month,
+      late2,
+      type='b',
+      col='blue')
+
+```
+
+![1111](https://user-images.githubusercontent.com/102167336/236180697-5cacff96-385f-41f9-8d6f-48a291e6980c.JPG)
+
+
+<br>
+
+## **상자그림**
+
+### 사분위수를 시각화하여 그래프 형태로 나타낸 것으로, 하나의 그래프로 데이터의 분포 등 다양한 정보 전달하여 단일변수 수치형 자료를 파악하는 데 자주 사용
+
+<br>
+
+## **예시1**
+
+```
+dist <- cars[, ]
+boxplot(dist, main='자동차 제동거리')
+```
+
+![image](https://user-images.githubusercontent.com/102167336/236182217-774db837-cd1d-4982-b890-0eb459871046.png)
+
+<br>
+
+## **예시2**
+
+```
+boxplot(Petal.Length~Species,
+        data=iris,
+        main='품종별 꽃잎의 길이',
+        col=c('green', 'yellow', 'blue'))
+```
+
+![image](https://user-images.githubusercontent.com/102167336/236183944-d72aec20-2a47-44b7-8061-8153be1cc98b.png)
+
+<br>
+
+## **산점도**
+
+### 다중변수 데이터에서 두 변수에 포함된 값들을 2차원 그래프 상에 점으로 표한하여 분포를 관찰할 수 있도록 하는 도구
+
+<br>
+
+## **예시**
+
+```
+wt <- mtcars$wt
+mpg <- mtcars$mpg
+plot(wt,
+     mpg,
+     main='중량-연비 그래프',
+     xlab='중량',
+     ylab='연비',
+     col='red',
+     pch=19)
+```
+
+![image](https://user-images.githubusercontent.com/102167336/236186315-5084be7f-3b33-42bb-b5d8-8acdab936068.png)
+
+<br>
+
+## **그룹 정보가 2개 변수의 산점도**
+
+```
+iris.2 <- iris[,3:4]
+levels(iris$Species)
+group <- as.numeric(iris$Species)
+color <- c('red', 'green', 'blue')
+plot(iris.2,
+     main='Iris plot',
+     pch=c(group),
+     col=color[group])
+
+```
+
+![image](https://user-images.githubusercontent.com/102167336/236191456-f699bcc9-8178-4f51-9092-e8857a588749.png)
+
+<br>
+
+## **데이터 분석 절차**
+
+### 문제 정의/계획 -> 데이터 수집 -> 데이터 정제/전처리 -> 
+
+### 데이터 탐색 -> 데이터 분석 -> 결과 보고
+
+<br>
+
+
+
+<br>
+
+---
+---
+
 ## <span style="color:yellow">**2023-04-27**</span>
 
 ### 19:51 도착 후 내용을 정리했습니다.
